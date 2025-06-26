@@ -6,7 +6,10 @@ const port = 3000;
 
 app.get("/", function(req, res) {
 	//res.end(req.host);
-	res.end(req.ip);
+	//res.end(req.ip);
+	//res.send("Hello");
+	res.end("hi");
+	//res.status(404).end(res.status);
 });
 
 app.listen(port, function() {
